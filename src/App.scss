@@ -21,16 +21,21 @@
   backdrop-filter: blur(6.1px);
   -webkit-backdrop-filter: blur(6.1px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  min-width: 900px;
   max-width: 900px;
   margin: 20px auto;
   background-color: #000;
-  position: absolute;
-  top: 25%;
-  left: 22%;
+  // position: absolute;
+  // top: 25%;
+  // left: 22%;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   height: 500px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .file-picker {
@@ -101,24 +106,7 @@
   margin-left: 10px;
 }
 
-.video-player-container {
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6.1px);
-  -webkit-backdrop-filter: blur(6.1px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 25%;
-  left: 22%;
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .redpill {
   padding: 5px 4px;
