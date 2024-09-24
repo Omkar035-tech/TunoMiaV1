@@ -1,0 +1,460 @@
+.btn {
+  padding: 5px;
+  margin: 5px 4px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  font-size: 15px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+.video-player-container {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #000;
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  height: 500px;
+}
+
+.file-picker {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+}
+
+.file-picker input[type="file"] {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.url-input-container {
+  margin-top: 10px;
+}
+
+.url-input-container input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.url-input-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.control-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-button:hover {
+  background-color: #0056b3;
+}
+
+
+.boost-button {
+  margin-left: 10px;
+}
+
+.video-player-container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.1px);
+  -webkit-backdrop-filter: blur(6.1px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 25%;
+  left: 22%;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redpill {
+  padding: 5px 4px;
+
+}
+
+.controls {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  animation: fadeIn 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.file-picker {
+  margin: 10px;
+}
+
+.progress-bar {
+  width: 50%;
+}
+
+
+.hamburger-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  background-color: #444;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.pillname {
+  padding: 10px 10px;
+}
+
+.cardw {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .chin {
+    margin: 0px 10px;
+  }
+}
+
+.settings-popup,
+.file-popup,
+.folder-popup {
+  height: 300px;
+  overflow: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 20px;
+  z-index: 1000;
+  color: white;
+  background: rgba(100, 100, 100, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(100, 100, 100, 0.42);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #555;
+}
+
+/* 
+input[type="range"] {
+  width: 100px;
+} */
+
+input[type="color"] {
+  margin-left: 10px;
+}
+
+
+/* range coder */
+@mixin sp-layout {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  overflow: hidden;
+}
+
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(-45deg);
+}
+
+$colors: rgb(255, 51, 51), orange, yellow, rgb(21, 255, 0), rgb(0, 34, 255), rgb(255, 10, 255);
+$repeat: 20; // How often you want the pattern to repeat.
+// Warning: a higher number outputs more CSS.
+
+.star {
+  $star-count: 50;
+  --star-color: var(--primary-color);
+  --star-tail-length: 6em;
+  --star-tail-height: 2px;
+  --star-width: calc(var(--star-tail-length) / 6);
+  --fall-duration: 9s;
+  --tail-fade-duration: var(--fall-duration);
+
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px currentColor);
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite,
+    tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+
+  @include sp-layout {
+    // For mobile performance, tail-fade animation will be removed QAQ
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+  }
+
+
+  @for $i from 1 through $star-count {
+    @for $i from 1 through $repeat {
+      &:nth-child(#{$i}) {
+        color: lighten(nth($colors, random(length($colors))), 20%);
+        --star-tail-length: #{random_range(500em, 750em) / 100};
+        --top-offset: #{random_range(0vh, 10000vh) / 100};
+        --fall-duration: #{random_range(6000, 12000s) / 1000};
+        --fall-delay: #{random_range(0, 10000s) / 1000};
+      }
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: calc(var(--star-width) / -2);
+    width: var(--star-width);
+    height: 100%;
+    background: linear-gradient(45deg, transparent, currentColor, transparent);
+    border-radius: inherit;
+    animation: blink 2s linear infinite;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+
+@keyframes tail-fade {
+
+  0%,
+  50% {
+    width: var(--star-tail-length);
+    opacity: 1;
+  }
+
+  70%,
+  80% {
+    width: 0;
+    opacity: 0.4;
+  }
+
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
+
+
+.range {
+  width: 100%;
+  height: 10px;
+  -webkit-appearance: none;
+  background: #9f9f9f7c;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00fd0a;
+    cursor: pointer;
+    border: 2px solid #333;
+    box-shadow: -907px 0 0 900px #00fd0a;
+  }
+}
+
+
+.volume-container {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+}
+
+.speaker-icon {
+  cursor: pointer;
+}
+
+.volume-slider {
+  color: white;
+  position: absolute;
+  bottom: 53px;
+  right: 5px;
+  width: 48px;
+  height: 170px;
+  transform-origin: center;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+}
+
+.extrarange {
+  width: auto;
+  height: 7px;
+  -webkit-appearance: none;
+  background: #9f9f9f7c;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  transform: rotate(-90deg);
+  position: relative;
+  bottom: 70px;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fd0000;
+    cursor: pointer;
+    border: 2px solid #333;
+    box-shadow: -400px 0 0 400px #fd0000;
+  }
+}
